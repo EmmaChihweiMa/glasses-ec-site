@@ -1,4 +1,117 @@
+
+/* footer */
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  color: white;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  background-color: #AA0601;
+}
+.footer-left{
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.footer .menu{
+  margin-bottom: 26px;
+}
+.footer .menu-item  a{
+  padding: 12px 32px;
+}
+.footer .footer-link-sns img{
+  width: 48px;
+}
+.footer .footer-link-sns a{
+  padding: 0 16px;
+}
+.footer .contact-list{
+  font-size: 36px;
+}
+.footer .contact-list .material-symbols-outlined{
+  font-size: 36px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.footer .contact-list li:not(last-child) { 
+  margin-bottom: 8px;
+}
+.footer .copyright{
+  justify-content: space-between;
+}
+.footer .copyright-text{
+  margin-bottom: 4px;
+}
+.footer .legal-list a{
+  padding: 0 24px;
+}
+@media (max-width:992px) {
+  .footer .footer-link-sns a{
+    padding: 0 8px;
+  }
+}
+@media (max-width:576px) {
+  .footer .menu{
+    display: none;
+  }
+  .footer .contact-list{
+    font-size: 16px;
+  }
+  .footer .contact-list .material-symbols-outlined{
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .footer .footer-link-sns img{
+    width: 24px;
+  }
+  .footer .copyright{
+    flex-direction: column;
+  }
+  .footer .legal-list{
+    flex-direction: column;
+  }
+  .footer .legal-list a{
+    padding: 4px 0;
+  }
+}
+
+
+/* utilities */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+@media(max-width: 992px) {
+  .container{
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container{
+    max-width: 372px;
+  }
+}
+.container-md-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.container-sm-full{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 767px) {
+  .container-sm-full {padding: 0;}
+}
+
+.d-flex{
+  display: flex;
+}
+.col-red{
+  color: #AA0601;
+}
+.col-white{
+  color: #FFFFFF;
 }

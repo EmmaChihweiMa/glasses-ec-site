@@ -1,19 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Week-4-task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+<!-- banner-->
+<div class="banner">
+  <div class="container d-flex banner-content">
+      <h2 class="banner-subtitle">Promise-Desert 2020 早春系列</h2>
+      <h1 class="banner-title">看得清，才能看得遠</h1>
+      <div class="btn"><a href="#">立即購買</a></div>
+  </div>
+</div> 
+<!-- intro -->
+<div class="intro">
+  <div class="container intro-content">
+      <h2 class="intro-title fs-h3 fw-bold">用專業的心，做專業的事</h2>
+      <div class="intro-card d-flex">
+          <div class="intro-card-items">
+              <img class="mb-4" src="/assets/images/2022 web layout training home section2-1.png" alt="單一價格">
+              <h4 class="fs-h4 col-darkRed">單一價格</h4>
+              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </div>
+          <div class="intro-card-items">
+              <img class="mb-4" src="/assets/images/Web Layout Training Home Section2.png" alt="20 分鐘即可取件">
+              <h4 class="fs-h4 col-darkRed">20 分鐘即可取件</h4>
+              <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+          </div>
+          <div class="intro-card-items">
+              <img class="mb-4" src="/assets/images/Web Layout Training Home Section2-3.png" alt="安心售後服務e">
+              <h4 class="fs-h4 col-darkRed">安心售後服務</h4>
+              <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+          </div>
+          <div class="intro-card-items">
+              <img class="mb-4" src="/assets/images/Web Layout Training Home Section 2-4.png" alt="關於鏡片">
+              <h4 class="fs-h4 col-darkRed">關於鏡片</h4>
+              <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- classy -->
+<div class="classy">
+  <div class="container classy-content">
+      <h3 class="classy-title fs-h3 col-darkRed mb-12 fw-bold">經典系列鏡框</h3>
+      <ul class="classy-list d-flex">
+        <li class="classy-card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="OPTICAL">            
+            <h4 class="classy-card-title fs-h3 col-red">OPTICAL</h4>
+        </li>
+        <li class="classy-card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="SUNGLASSES">
+            <h4 class="classy-card-title fs-h3 col-red">SUNGLASSES</h4>
+        </li>
+        <li class="classy-card">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="FUNCTIONAL">
+            <h4 class="classy-card-title fs-h3 col-red">FUNCTIONAL</h4>
+        </li>
+      </ul>
+  </div>
+</div>
+<!-- coBrand -->
+<div class="coBrand">
+  <div class="container coBrand-content">
+      <h3 class="coBrand-title fs-h3 col-white fw-bold mb-12">聯名設計鏡框</h3>
+      <div class="coBrand-card d-flex">
+          <div class="coBrand-card-item">
+              <img class="card-image" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true" alt="DOUBLE A+">
+              <h3 class="fs-h3 col-red fw-bold">DOUBLE A+</h3>
+          </div>
+          <div class="coBrand-card-item">
+              <img class="card-image" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true" alt="YOUTH">
+              <h3 class="fs-h3 col-red fw-bold">YOUTH</h3>
+          </div>
+      </div>
+  </div>
+</div> 
+<!-- recommend -->
+<div class="recommend">
+  <div class="rec-content container">
+      <h3 class="rec-title fs-h3 col-darkRed fw-bold mb-12">顧客推薦</h3>
+      <div class="rec-card d-flex justify-content-between">
+          <div class="rec-card-item">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true" alt="Jessy">
+              <div class="rec-message ml-4">
+                  <p>Jessy</p>
+                  <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+              </div>
+              <div class="rec-date col-darkGray ml-4"><p>2021/06/20</p></div>
+          </div>
+          <div class="rec-card-item">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true" alt="凱倫">
+              <div class="rec-message ml-4">
+                  <p>凱倫</p>
+                  <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+              </div>
+              <div class="rec-date col-darkGray ml-4"><p>2021/04/18</p></div>
+          </div>
+          <div class="rec-card-item">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true" alt="悠悠">
+              <div class="rec-message ml-4">
+                  <p>悠悠</p>
+                  <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+              </div>
+              <div class="rec-date col-darkGray ml-4"><p>2020/12/25</p></div>
+          </div>
+          <div class="rec-card-item">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true" alt="Kyuan">
+              <div class="rec-message ml-4">
+                  <p>Kyuan</p>
+                  <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+              </div>
+              <div class="rec-date col-darkGray ml-4"><p>2020/10/31</p></div>
+          </div>
+      </div>
+  </div>
+</div> 
+<!-- contact -->
+<div class="contact">
+  <div class="contact-us container">
+      <h3 class="contact-title fs-h3 col-darkRed">聯絡我們</h3>
+      <div class="contact-form mb-6">
+          <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <form action="#">
+              <label for="name mb-2 fs-p">姓名</label>
+              <br>
+              <input class="inputBox mb-4" type="text" id="name" name="陳小明" />
+              <br>
+              <label for="tel mb-2 fs-p">聯絡電話</label>
+              <br>
+              <input class="inputBox mb-4" type="tel" id="name" name="0912-345-678" />
+              <br>
+              <label for="email mb-2 fs-p">電子郵件</label>
+              <br>
+              <input class="inputBox mb-4" type="text" id="name" name="example@email.com" />
+              <br>
+              <label for="feedback mb-2 fs-p">意見反應</label>
+              <br>
+              <textarea class="inputBox mb-4" name="feedback" id="feedback" name="請輸入您的意見"></textarea>
+              <br>
+              <div class="contact-form-agree">
+                  <input class="fs-p" type="checkbox" id="agree" name="agree" value="agree"/>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </div>
+              <br>
+              <button class="contact-btn col-white fs-p" type="submit">確認送出</button>
+          </form>
+      </div>
+  </div>
+</div>
 
     <%- include('./layout/footer'); -%>
-
+  <!--↓不要去動到（Vite Dev 核心模式）-->
     <script type="module" src="../main.js"></script>
   </body>
 </html>

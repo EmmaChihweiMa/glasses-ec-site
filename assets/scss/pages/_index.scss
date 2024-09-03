@@ -1,3 +1,244 @@
-.index-title {
-  font-size: 100px;
+/*----layout banner-----*/
+.banner{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-size: cover;
+    height:787px;
+    &-content{
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &-title{
+        font-size: 64px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: $secondary;
+    }
+    &-subtitle{
+        font-size: 36px;
+        color: $secondary;
+    }
+}
+.btn{
+    padding: 6px 12px;
+    background-color: #AA0601;
+}
+.btn a{
+    font-size: 20px;
+    color: $bg-light;
+}
+.btn:hover{
+    background-color: $secondary;
+}
+@media (max-width:992px){
+    .banner{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    }
+}
+@media (max-width: 767px){
+    .banner-title{
+        font-size: 24px;
+    }
+    .banner-subtitle{
+        font-size: 16px; 
+    }
+}
+
+/*----layout intro-----*/
+.intro{
+    background-color: #FBF2F2;
+    &-content{
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    &-title{
+        margin-bottom: 32px;
+        color: $secondary;
+    }
+    &-card-items{ 
+        width: calc(25% - 18px);
+        flex-direction: column;
+        align-items: center;
+        margin-right: 24px;
+    }
+}
+.intro-card-items img{
+    height: 83.33px;
+    width: 83.33px;
+}
+.intro-card-items h4{
+    font-weight: bold;
+}
+.intro-card-items p{
+    font-size: 16px;
+    text-align: left;
+}
+@media (max-width: 992px) {
+    .intro-card .intro-card-items{
+        width: calc(25% - 18px);
+    }
+}
+@media (max-width: 576px) {
+    .intro-card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .intro-card .intro-card-items{
+        width: 100%;
+    }
+    .intro-title{
+        font-size: 24px;
+    }
+}
+/*----layout classy-----*/
+.classy-content{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &-list{
+        gap: 24px;
+    }
+}
+.classy-list .classy-card-title{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+@media (max-width: 992px) {
+    .classy-list{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    .classy-list .classy-card-title{
+        max-width: 348px;
+    }
+    .classy-title{
+        font-size: 24px;
+    }
+}
+/*----layout coBrand-----*/
+.coBrand{
+    padding: 80px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover;
+    &-title{
+        text-align: center;
+    }
+    &-card-item{
+        background-color: $bg-light;
+    }
+    &-card-item h3{
+        font-style: italic;
+    }
+}
+.coBrand-content .coBrand-card-item{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.card-image{
+    height: 240px;
+    background-position: center;
+}
+@media (max-width:992px) {
+    .coBrand-card{
+        flex-wrap: wrap;
+    }
+    .coBrand-card .coBrand-card-item{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 576px) {
+    .coBrand-title{
+        font-size: 24px;
+    }
+}
+/*----layout recommend-----*/
+.rec-content{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rec-card-item{
+    text-align: left;
+    margin-right: 24px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px #00000029;
+}
+.rec-card-item p{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.rec-message{
+    margin-bottom: 72px;
+}
+@media (max-width:992px) {
+    .rec-card{
+        flex-wrap: wrap;
+    }
+    .rec-card-item{
+        margin-bottom: 16px;
+    }
+}
+@media (max-width:576px) {
+    .rec-title{
+        font-size: 24px;
+    }
+    .rec-card{
+        flex-wrap: wrap;
+    }
+    .rec-card-item{
+        margin-bottom: 16px;
+    }
+    .rec-card .rec-card-item{
+        width: 100%;
+    }
+}
+
+/*----layout contact-----*/
+.contact{
+    background-color: #FBF2F2;
+    &-title{
+        font-weight: bold;
+    }
+    &-us{
+        text-align: center;
+        padding: 80px 0;
+    }
+}
+.contact-form{
+    max-width: 636px; //視窗小於636就不會再往內縮
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-form p{
+    font-size: 20px;
+}
+.inputBox{
+    width: 100%;
+    background-color: #FBF2F2;
+}
+.contact-btn{
+    background-color:  #AA0601;
+    border: 0;
+    padding: 16px 25%;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width:576px) {
+    .contact-title{
+        font-size: 24px;
+    }
+    .contact-us{
+        padding: 40px 0;
+    }
 }
